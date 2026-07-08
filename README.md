@@ -1,16 +1,26 @@
-# React + Vite
+# Bawra Digitals - Healthcare Social Media Marketing Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This repository contains the source code for the landing page of **Bawra Digitals**, a leading healthcare social media marketing agency in Rajasthan.
 
-Currently, two official plugins are available:
+## Features
+- **Responsive Layout**: Designed to look great on desktop, tablet, and mobile.
+- **Contact Form**: Integrated with Google Sheets database and Meta/Facebook Pixel conversion tracking.
+- **Dynamic Assets**: Automatically resolves sub-directory paths for multi-environment deployments.
+- **Auto Deploy**: Integrated with GitHub Actions for automated deployment to GitHub Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **Framework**: React (with Vite)
+- **Styling**: Tailwind CSS
+- **Routing**: React Router
 
-## React Compiler
+## Development
+To run the project locally:
+```bash
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+To build the project:
+```bash
+npm run build
+```
