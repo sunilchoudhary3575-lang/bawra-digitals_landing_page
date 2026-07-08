@@ -5,7 +5,7 @@ import ThankYou from './pages/ThankYou';
 
 function App() {
   return (
-    <BrowserRouter basename="/landingpage">
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/thankyou" element={<ThankYou />} />
