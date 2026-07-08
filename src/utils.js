@@ -10,14 +10,24 @@ export const getAssetUrl = (path) => {
     cleanPath = cleanPath.substring('landingpage/'.length);
   }
   
-  // Find where 'landingpage' is in the current pathname to resolve the dynamic base
   const pathname = window.location.pathname;
-  const landingPageIndex = pathname.indexOf('/landingpage');
   
+  // Find where 'landingpage' is in the current pathname to resolve the dynamic base
+  const landingPageIndex = pathname.indexOf('/landingpage');
   if (landingPageIndex !== -1) {
     const dynamicBase = pathname.substring(0, landingPageIndex + '/landingpage'.length);
     return `${dynamicBase}/${cleanPath}`;
   }
   
-  return `/landingpage/${cleanPath}`;
+  // Find where 'bawra-digitals_landing_page' is in the current pathname
+  const ghPageIndex = pathname.indexOf('/bawra-digitals_landing_page');
+  if (ghPageIndex !== -1) {
+    const dynamicBase = pathname.substring(0, ghPageIndex + '/bawra-digitals_landing_page'.length);
+    return `${dynamicBase}/${cleanPath}`;
+  }
+  
+  // Default fallback (uses base path e.g. '/' or relative)
+  const base = import.meta.env.BASE_URL;
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  return `${cleanBase}${cleanPath}`;
 };
