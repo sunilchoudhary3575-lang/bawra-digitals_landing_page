@@ -41,7 +41,7 @@ const Hero = ({ onContactClick }) => {
         button_location: 'Hero Section'
       });
     }
-    onContactClick();
+    window.open("https://calendly.com/teambawradigitals7/healthcare-growth-strategy-session", "_blank");
   };
 
   const handlePhoneClick = () => {
