@@ -37,7 +37,7 @@ const Hero = ({ onContactClick }) => {
   const handleCtaClick = () => {
     if (window.fbq) {
       window.fbq('trackCustom', 'CTAClick', {
-        button_name: "Let's Connect",
+        button_name: "Book a Free Health Care Consultation",
         button_location: 'Hero Section'
       });
     }
@@ -109,7 +109,7 @@ const Hero = ({ onContactClick }) => {
         </div>
 
         {/* Action Button */}
-        <button onClick={handleCtaClick} className="btn-primary text-base sm:text-lg md:text-xl px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 w-full sm:w-auto max-w-xs sm:max-w-none mb-0" aria-label="Connect with us">
+        <button onClick={handleCtaClick} className="btn-primary text-base sm:text-lg md:text-xl px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 w-full sm:w-auto max-w-xs sm:max-w-none mb-0" aria-label="Book a Free Health Care Consultation">
           {heroContent.ctaText}
         </button>
       </div>

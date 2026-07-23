@@ -173,7 +173,7 @@ const CoreBelievers = ({ onContactClick }) => {
         {/* Desktop grid layout */}
         <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 lg:gap-6">
           {logos.map((logo, index) => (
-            <div key={index} className="card flex items-center justify-center p-6 h-32 bg-gray-50">
+            <div key={index} className="card flex items-center justify-center p-6 h-32 bg-white">
               <img
                 src={getAssetUrl(logo.image)}
                 alt={logo.name}
@@ -202,7 +202,7 @@ const CoreBelievers = ({ onContactClick }) => {
             >
               {row1Logos.map((logo, index) => (
                 <div key={index} className="min-w-[50%] flex items-center justify-center px-2">
-                  <div className="card w-full flex items-center justify-center p-3 sm:p-4 h-20 sm:h-24 bg-gray-50">
+                  <div className="card w-full flex items-center justify-center p-3 sm:p-4 h-20 sm:h-24 bg-white">
                     <img
                       src={getAssetUrl(logo.image)}
                       alt={logo.name}
@@ -231,7 +231,7 @@ const CoreBelievers = ({ onContactClick }) => {
             >
               {row2Logos.map((logo, index) => (
                 <div key={index} className="min-w-[50%] flex items-center justify-center px-2">
-                  <div className="card w-full flex items-center justify-center p-3 sm:p-4 h-20 sm:h-24 bg-gray-50">
+                  <div className="card w-full flex items-center justify-center p-3 sm:p-4 h-20 sm:h-24 bg-white">
                     <img
                       src={getAssetUrl(logo.image)}
                       alt={logo.name}

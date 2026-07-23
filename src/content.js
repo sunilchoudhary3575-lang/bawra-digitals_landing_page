@@ -1,7 +1,7 @@
 export const heroContent = {
   headline: "Rajasthan's Leading Healthcare Social Media Marketing Agency",
   subheading: "We help doctors, hospitals, and healthcare brands build their online presence, attract more patients, and grow their practice through strategic social media marketing, content creation, and digital advertising.",
-  ctaText: "Let's Connect",
+  ctaText: "Book a Free Health Care Consultation",
   youtubeVideoUrl: "https://youtu.be/oM9cWlXwj-0"
 };
 
@@ -28,43 +28,67 @@ export const coreBelieversContent = {
     { name: "Dr. Bhajan", image: "/landingpage/assets/logos/dr-bhajan.webp" },
     { name: "NAMYAA", image: "/landingpage/assets/logos/namyaa.webp" },
     { name: "Shivam Homeopathy", image: "/landingpage/assets/logos/shivam-homeopathy.webp" },
-    { name: "Mediking Diagnostic Centre", image: "/landingpage/assets/logos/mediking.webp" }
+    { name: "Mediking Diagnostic Centre", image: "/landingpage/assets/logos/mediking.webp" },
+    { name: "Dr. Rajendra Bhati", image: "/landingpage/assets/logos/dr-rajendra-bhati.png" },
+    { name: "Shri Maheshwari Hospital", image: "/landingpage/assets/logos/shri-maheshwari-hospital.png" },
+    { name: "Saraswati Hospital", image: "/landingpage/assets/logos/saraswati-hospital.png" },
+    { name: "Ashoka Medicity", image: "/landingpage/assets/logos/ashoka-medicity.png" },
+    { name: "Manav Hospital", image: "/landingpage/assets/logos/manav-hospital.png" },
+    { name: "Concept Dirghayu", image: "/landingpage/assets/logos/concept-dirghayu.png" },
+    { name: "Project Open Skies", image: "/landingpage/assets/logos/project-open-skies.png" },
+    { name: "Dr. Pradeep Singh Clinic", image: "/landingpage/assets/logos/dr-pradeep-singh-clinic.png" },
+    { name: "Citilite Hospital", image: "/landingpage/assets/logos/citilite-hospital.png" }
   ]
 };
 
 export const servicesContent = {
   title: "Services",
   subtitle: "Our Healthcare Marketing Services",
-  ctaText: "Get Started",
+  ctaText: "Book a Free Strategy Call",
   services: [
     {
-      title: "Social Media Management for Doctors & Clinics",
-      description: "Complete social media management including content planning, posting, engagement, and community building across all major platforms.",
+      title: "Healthcare Social Media Management",
+      features: [
+        "Local language posts jo patient trust banayein",
+        "Instagram, Meta & Google Profile ka 360° control",
+        "Professional branding & authority building"
+      ],
       image: "/landingpage/assets/services/socialmediafordoctors.webp"
     },
     {
-      title: "Meta & Google Ads for Patient Leads",
-      description: "Targeted advertising campaigns on Meta (Facebook/Instagram) and Google to generate qualified patient leads and increase appointments.",
+      title: "High-ROI Patient Acquisition Ads",
+      features: [
+        "Local target radius (Zero ad-budget wastage)",
+        "Direct WhatsApp & OPD Call campaigns",
+        "Low CPL aur guaranteed lead tracking"
+      ],
       image: "/landingpage/assets/services/googleads.webp"
     },
     {
-      title: "Video Production for Doctors",
-      description: "Professional video content creation including patient testimonials, educational videos, procedure explanations, and brand storytelling.",
+      title: "4K Cinematic Doctor Reels",
+      features: [
+        "On-site professional shoot & studio setup",
+        "High-engaging scripts & healthcare reels",
+        "Authentic patient testimonial videos"
+      ],
       image: "/landingpage/assets/services/video-production.webp"
     },
     {
-      title: "Healthcare Focused Content Creation",
-      description: "Medical content that educates, engages, and converts - from blog posts to social media graphics, all optimized for healthcare audiences.",
+      title: "Medical-Grade Content & Awareness",
+      features: [
+        "Medically accurate & doctor-approved copy",
+        "Custom disease awareness infographics",
+        "SEO-optimized blogs Google ranking ke liye"
+      ],
       image: "/landingpage/assets/services/contentcreation.webp"
     },
     {
-      title: "Social Media Advertising",
-      description: "Grow your brand’s reach with tailored ad campaigns on platforms like Meta and Instagram. We create engaging ads that drive clicks and boost conversions.",
-      image: "/landingpage/assets/services/socialmediaadvertising.webp"
-    },
-    {
-      title: "Branding for Healthcare Professionals",
-      description: "Complete branding solutions including logo design, brand identity, website design, and marketing materials for healthcare practices.",
+      title: "Complete Digital Identity & Reputation",
+      features: [
+        "Premium logo & clinic stationery design",
+        "Fast, high-converting healthcare website",
+        "Google Maps 5-star review dominance"
+      ],
       image: "/landingpage/assets/services/healthcarebranding.webp"
     }
   ]
@@ -89,16 +113,16 @@ export const whyUsContent = {
 };
 
 export const testimonialsContent = {
-  title: "Testimonials",
+  title: "Premium Testimonial Reels",
   subtitle: "What Our Clients Say",
   ctaText: "Become Our Client",
   testimonials: [
-    { name: "Dr M. K. Singhi", role: "Dermatologist", videoUrl: "https://youtube.com/shorts/tLxcwAWNmSA?feature=share", isShort: true },
-    { name: "Dr. Rakesh Kumar", role: "AIIMS senior physician", videoUrl: "https://youtube.com/shorts/JJMyXD-yFwY?feature=share", isShort: true },
-    { name: "Dr. Vikas Dhakar", role: "AIIMS psychiatrist", videoUrl: "https://youtube.com/shorts/KpVFjBdUzfM?feature=share", isShort: true },
-    { name: "⁠Dr. Priyanka Choudhary", role: "Cosmetologist and dentist", videoUrl: "https://youtube.com/shorts/eiLNUL6UlQo?feature=share", isShort: true },
-    { name: "Dr Suman Galwa", role: "IVF expert", videoUrl: "https://youtube.com/shorts/DyygCu1lafc?feature=share", isShort: true },
-    { name: "Dr Sonal Parihar", role: "Gynecologist", videoUrl: "https://youtu.be/8VlZprLK_9I", isShort: false }
+    { name: "Dr M. K. Singhi", role: "Dermatologist", videoUrl: "https://youtube.com/shorts/tLxcwAWNmSA?feature=share", isShort: true, badge: "DERMATOLOGIST" },
+    { name: "Dr. Rakesh Kumar", role: "AIIMS senior physician", videoUrl: "https://youtube.com/shorts/JJMyXD-yFwY?feature=share", isShort: true, badge: "PHYSICIAN" },
+    { name: "Dr. Vikas Dhakar", role: "AIIMS psychiatrist", videoUrl: "https://youtube.com/shorts/KpVFjBdUzfM?feature=share", isShort: true, badge: "PSYCHIATRIST" },
+    { name: "⁠Dr. Priyanka Choudhary", role: "Cosmetologist and dentist", videoUrl: "https://youtube.com/shorts/eiLNUL6UlQo?feature=share", isShort: true, badge: "DENTIST" },
+    { name: "Dr Suman Galwa", role: "IVF expert", videoUrl: "https://youtube.com/shorts/DyygCu1lafc?feature=share", isShort: true, badge: "IVF EXPERT" },
+    { name: "Dr Sonal Parihar", role: "Gynecologist", videoUrl: "https://youtu.be/8VlZprLK_9I", isShort: false, badge: "GYNECOLOGIST" }
   ]
 };
 
