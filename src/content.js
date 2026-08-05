@@ -37,7 +37,8 @@ export const coreBelieversContent = {
     { name: "Concept Dirghayu", image: "/landingpage/assets/logos/concept-dirghayu.png" },
     { name: "Project Open Skies", image: "/landingpage/assets/logos/project-open-skies.png" },
     { name: "Dr. Pradeep Singh Clinic", image: "/landingpage/assets/logos/dr-pradeep-singh-clinic.png" },
-    { name: "Citilite Hospital", image: "/landingpage/assets/logos/citilite-hospital.png" }
+    { name: "Citilite Hospital", image: "/landingpage/assets/logos/citilite-hospital.png" },
+    { name: "Crown Hair Transplant", image: "/landingpage/assets/logos/crown-hair-transplant.png" }
   ]
 };
 
