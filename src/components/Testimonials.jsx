@@ -18,18 +18,30 @@ const getTestimonialVideoId = (url) => {
 };
 
 const VideoThumbnail = ({ videoId, name }) => {
-  const [imgSrc, setImgSrc] = useState(`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`);
+  const [imgSrc, setImgSrc] = useState(`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`);
+
+  const handleImageLoad = (e) => {
+    // If YouTube returned the 120x90 grey "..." error placeholder
+    if (e.target.naturalWidth <= 120 && !imgSrc.includes('mqdefault.jpg')) {
+      setImgSrc(`https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`);
+    }
+  };
+
+  const handleImageError = () => {
+    if (!imgSrc.includes('mqdefault.jpg')) {
+      setImgSrc(`https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`);
+    } else if (!imgSrc.includes('0.jpg')) {
+      setImgSrc(`https://i.ytimg.com/vi/${videoId}/0.jpg`);
+    }
+  };
 
   return (
     <img
       src={imgSrc}
       alt={`${name} Testimonial`}
       className="w-full h-full object-cover select-none pointer-events-none"
-      onError={() => {
-        if (imgSrc.includes('maxresdefault.jpg')) {
-          setImgSrc(`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`);
-        }
-      }}
+      onLoad={handleImageLoad}
+      onError={handleImageError}
     />
   );
 };

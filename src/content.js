@@ -35,7 +35,6 @@ export const coreBelieversContent = {
     { name: "Ashoka Medicity", image: "/landingpage/assets/logos/ashoka-medicity.png" },
     { name: "Manav Hospital", image: "/landingpage/assets/logos/manav-hospital.png" },
     { name: "Concept Dirghayu", image: "/landingpage/assets/logos/concept-dirghayu.png" },
-    { name: "Project Open Skies", image: "/landingpage/assets/logos/project-open-skies.png" },
     { name: "Dr. Pradeep Singh Clinic", image: "/landingpage/assets/logos/dr-pradeep-singh-clinic.png" },
     { name: "Citilite Hospital", image: "/landingpage/assets/logos/citilite-hospital.png" },
     { name: "Crown Hair Transplant", image: "/landingpage/assets/logos/crown-hair-transplant.png" }
@@ -109,7 +108,7 @@ export const whyUsContent = {
   ],
   stats: [
     { number: "100+", label: "Healthcare Clients" },
-    { number: "4+", label: "Years of Experience" }
+    { number: "5+", label: "Years of Experience" }
   ]
 };
 
@@ -121,7 +120,7 @@ export const testimonialsContent = {
     { name: "Dr M. K. Singhi", role: "Dermatologist", videoUrl: "https://youtube.com/shorts/tLxcwAWNmSA?feature=share", isShort: true, badge: "DERMATOLOGIST" },
     { name: "Dr. Rakesh Kumar", role: "AIIMS senior physician", videoUrl: "https://youtube.com/shorts/JJMyXD-yFwY?feature=share", isShort: true, badge: "PHYSICIAN" },
     { name: "Dr. Vikas Dhakar", role: "AIIMS psychiatrist", videoUrl: "https://youtube.com/shorts/KpVFjBdUzfM?feature=share", isShort: true, badge: "PSYCHIATRIST" },
-    { name: "⁠Dr. Priyanka Choudhary", role: "Cosmetologist and dentist", videoUrl: "https://youtube.com/shorts/eiLNUL6UlQo?feature=share", isShort: true, badge: "DENTIST" },
+    { name: "Dr. Priyanka Choudhary", role: "Cosmetologist and dentist", videoUrl: "https://youtube.com/shorts/eiLNUL6UlQo?feature=share", isShort: true, badge: "DENTIST" },
     { name: "Dr Suman Galwa", role: "IVF expert", videoUrl: "https://youtube.com/shorts/DyygCu1lafc?feature=share", isShort: true, badge: "IVF EXPERT" },
     { name: "Dr Sonal Parihar", role: "Gynecologist", videoUrl: "https://youtu.be/8VlZprLK_9I", isShort: false, badge: "GYNECOLOGIST" }
   ]
@@ -154,8 +153,7 @@ export const clientPresenceContent = {
   clients: [
     { name: "Shri Ram Hospital", image: "/landingpage/assets/longImages/shriramhospitals.png", instagramUrl: "https://instagram.com/shriramhospitals" },
     { name: "Galwa Care Hospitals", image: "/landingpage/assets/longImages/galwacarehospitals.png", instagramUrl: "https://instagram.com/galwacarehospital" },
-    { name: "Dr. Singhi's", image: "/landingpage/assets/longImages/drsinghis.png", instagramUrl: "https://instagram.com/dr.singhiclinic" },
-    { name: "Kamala Nagar Hospital", image: "/landingpage/assets/longImages/kamalanagarhospital.png", instagramUrl: "https://instagram.com/kamlanagarhospital89" }
+    { name: "Dr. Singhi's", image: "/landingpage/assets/longImages/drsinghis.png", instagramUrl: "https://instagram.com/dr.singhiclinic" }
   ]
 };
 
@@ -167,11 +165,11 @@ export const contactCTAContent = {
   website: "www.bawradigitals.com",
   address: {
     line1: "Bawra Digitals Pvt. Ltd.™",
-    line2: "Behind Arora Honda Motors",
-    line3: "Near Bombay Motors Circle",
-    line4: "Pratap Nagar, Jodhpur, Rajasthan",
+    line2: "18/719, Opposite Chand Vilas Namkeen",
+    line3: "Sector 18, Chopasni Housing Board",
+    line4: "Jodhpur, Rajasthan",
     state: "Rajasthan",
-    pincode: "342001"
+    pincode: "342008"
   },
   gstin: "08AAMCB1287D1ZO",
   mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.440733817555!2d72.99769237487332!3d26.2798066870037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf13e4866b3a4841%3A0xca51de0c41730bad!2sBawra%20Digitals%20Pvt.%20Ltd.%20%7C%20Video%20Production%20%7C%20Digital%20Marketing%20Agency!5e0!3m2!1sen!2sin!4v1763875762429!5m2!1sen!2sin"

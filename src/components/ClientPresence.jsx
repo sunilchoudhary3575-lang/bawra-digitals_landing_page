@@ -83,9 +83,12 @@ const ClientPresence = ({ onContactClick }) => {
           {clientPresenceContent.subtitle}
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto justify-center">
           {clientPresenceContent.clients.map((client, idx) => (
-            <div key={idx} className="card p-2 sm:p-3 overflow-hidden">
+            <div 
+              key={idx} 
+              className={`card p-2 sm:p-3 overflow-hidden ${idx === 2 ? 'sm:col-span-2 md:col-span-1 sm:max-w-xs sm:mx-auto md:max-w-none w-full' : ''}`}
+            >
               <a
                 href={client.instagramUrl}
                 target="_blank"
