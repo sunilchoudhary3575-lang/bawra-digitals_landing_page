@@ -9,7 +9,6 @@ const ContactForm = () => {
     phone: '',
     city: '',
     clinicName: '',
-    jobTitle: '',
     timeSlot: '',
     budget: '',
     goal: '',
@@ -53,7 +52,6 @@ const ContactForm = () => {
     if (!isValidPhone(formData.phone)) return showError("Please enter a valid 10-digit Indian mobile number");
     if (!formData.city.trim()) return showError("Please enter your city");
     if (!formData.clinicName.trim()) return showError("Please enter hospital / clinic name");
-    if (!formData.jobTitle.trim()) return showError("Please enter your job title");
     if (!formData.timeSlot) return showError("Please select a preferred time slot");
     if (!formData.budget) return showError("Minimum monthly marketing budget is ₹40,000");
     if (!formData.goal.trim()) return showError("Please describe your main goal or objective");
@@ -107,7 +105,6 @@ const ContactForm = () => {
         phone: formData.phone,
         city: formData.city,
         clinicName: formData.clinicName,
-        jobTitle: formData.jobTitle,
         timeSlot: formData.timeSlot,
         budget: formData.budget,
         goal: formData.goal,
@@ -137,8 +134,7 @@ const ContactForm = () => {
           content_name: "Contact Form Submission",
           content_category: "Healthcare Lead",
           city: formData.city,
-          budget: formData.budget,
-          job_title: formData.jobTitle
+          budget: formData.budget
         });
         console.log('[FB Pixel] Track: Lead', { city: formData.city, budget: formData.budget });
       }
@@ -217,16 +213,6 @@ const ContactForm = () => {
                 name="clinicName"
                 placeholder="Hospital / Clinic Name *"
                 value={formData.clinicName}
-                onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none transition-all duration-200 bg-white placeholder-slate-400 text-slate-800"
-                required
-              />
-
-              <input
-                type="text"
-                name="jobTitle"
-                placeholder="Job Title *"
-                value={formData.jobTitle}
                 onChange={handleInputChange}
                 className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none transition-all duration-200 bg-white placeholder-slate-400 text-slate-800"
                 required
